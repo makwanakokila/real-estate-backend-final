@@ -8,7 +8,7 @@ exports.uploadFile = async (req, res) => {
 
   const file = new File({
     filename: req.file.filename,
-    path: req.file.path
+   path: `/uploads/${req.file.filename}` // ✅ Fixed here
   });
 
   await file.save();
