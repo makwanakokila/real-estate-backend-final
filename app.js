@@ -68,5 +68,6 @@ app.get('/api/chat', getChat);
 app.post('/api/chat', handleChat);
 
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+   console.log(`Server running at http://localhost:${port} or at your Render URL.`);
+
 });
