@@ -31,8 +31,7 @@ const architectureSignatureRoutes = require('./Routes/architectureSignatureRoute
 const { getChat, handleChat } = require('./chatbot');
 
 const app = express();
-const port = 3000;
-
+const port = process.env.PORT || 3000;
 dotenv.config();
 connectDB();
 app.use(cors());
